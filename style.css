@@ -1,0 +1,642 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+body {
+  overflow-x: hidden;
+  font-family: Arial, Helvetica, sans-serif;
+}
+/*============== shoesImg products section  ==============*/
+.shoesImg {
+  width: 30%;
+  height: 150px;
+}
+
+/*============== Add dark class to change theme ==============*/
+body.dark {
+  background-color: black;
+  color: white;
+}
+/*============== SignUp button hover styling ==============*/
+#SignUp {
+  background-color: #ebe8e8;
+}
+#SignUp:hover {
+  background-color: #0252ff;
+  color: white;
+}
+.banner-para {
+  font-size: 18px;
+}
+.loginbtn,
+.signupbtn {
+  padding: 8px 24px;
+  border-radius: 5px;
+  outline: none;
+}
+.shadow-lap {
+  box-shadow: 0 0 5px 5px #00000076;
+  border-radius: 50px;
+}
+
+/*============== Hero section  ==============*/
+.hero-100vh {
+  height: 100vh;
+}
+/*============== offcanvasScrolling section  ==============*/
+#offcanvasScrolling {
+  width: 70%;
+  height: 100vh;
+}
+.offcanvas-body {
+  color: black;
+}
+/*============== Trading products section  ==============*/
+.trd-img-wh {
+  width: 100%;
+  height: auto;
+}
+
+/*============== Message modal  ==============*/
+
+.search-control {
+  width: 30%;
+  height: 38px;
+  padding: 0 10px;
+  border-radius: 5px;
+  border: 1px solid black;
+  outline: none;
+}
+/*============== Message modal  ==============*/
+#messageModal {
+  width: 400px;
+  height: 200px;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 0 5px 1px gray;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 4%;
+  left: 40%;
+  background-color: #fcf9f9ac;
+  backdrop-filter: blur(20px);
+}
+#messageModal i {
+  font-size: 50px;
+  color: green;
+}
+
+/*============== Sign up message modal ==============*/
+#signupMsgModal {
+  width: 400px;
+  height: 200px;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 0 5px 1px gray;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 4%;
+  left: 40%;
+  background-color: #fcf9f988;
+  backdrop-filter: blur(20px);
+}
+#signupMsgModal i {
+  font-size: 50px;
+  color: green;
+}
+#signupMsgModal p {
+  font-size: 20px;
+}
+
+/*============== Signup Message Modal on index.html ==============*/
+#MainsignupMsgModal {
+  width: 400px;
+  height: 200px;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 0 5px 1px gray;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 4%;
+  left: 40%;
+  background-color: #fcf9f988;
+  backdrop-filter: blur(20px);
+}
+
+#MainsignupMsgModal i {
+  font-size: 50px;
+  color: green;
+}
+#MainsignupMsgModal p {
+  font-size: 20px;
+}
+/*============== Login up Message Modal on index.html ==============*/
+#MainmessageModal {
+  width: 400px;
+  height: 200px;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 0 5px 1px gray;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 4%;
+  left: 40%;
+  background-color: #fcf9f988;
+  backdrop-filter: blur(20px);
+}
+
+#MainmessageModal i {
+  font-size: 50px;
+  color: green;
+}
+#MainmessageModal p {
+  font-size: 20px;
+}
+/* ===========Contact Us Message modal ==============*/
+#contactusMsgModal {
+  width: 400px;
+  height: 200px;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 0 5px 1px gray;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 3%;
+  left: 40%;
+  background-color: #fcf9f988;
+  backdrop-filter: blur(20px);
+}
+#contactusMsgModal i {
+  font-size: 50px;
+  color: green;
+}
+
+/*============== Add to cart Msg ==============*/
+#AddToCartMsgModal {
+  width: 350px;
+  height: 80px;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 0 5px 1px gray;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 3%;
+  left: 40%;
+  background-color: #fcf9f988;
+  backdrop-filter: blur(20px);
+  padding: 4%;
+  line-height: 30px;
+}
+#AddToCartMsgModal i {
+  font-size: 50px;
+  color: green;
+  padding-top: 20px;
+}
+/*============== Buy form message styling ==============*/
+.buyform {
+  width: 35%;
+  background-color: #dccfcf3a;
+  backdrop-filter: blur(20px);
+  border-radius: 10px;
+  position: fixed;
+  top: 30px;
+  left: 35%;
+  z-index: 99;
+}
+#BuyMsgModal {
+  width: 350px;
+  height: 80px;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 0 5px 1px gray;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 3%;
+  left: 40%;
+  background-color: #fcf9f988;
+  backdrop-filter: blur(20px);
+  padding: 4%;
+  line-height: 30px;
+  white-space: nowrap;
+}
+#BuyMsgModal i {
+  font-size: 50px;
+  color: green;
+  padding-top: 20px;
+}
+/*============== Shows cursor pointer on icon ==============*/
+i {
+  cursor: pointer;
+}
+/*============== Column height in Our Popular Picks ==============*/
+.height-320 {
+  height: 320px;
+}
+/*============== Custome image styling to the product details page ==============*/
+.img-300 {
+  width: 100%;
+  height: 400px;
+  border-radius: 5px;
+}
+/*============== Product collection images width and height ==============*/
+.img-wh {
+  width: 100%;
+  height: 170px;
+  object-fit: contain;
+}
+/*============== Last two cart image ==============*/
+.imgh-200 {
+  height: 220px;
+  width: 100%;
+  object-fit: contain;
+}
+/*============== Footer copy write text ==============*/
+.footer-p {
+  font-family: "Akaya Kanadaka", system-ui;
+  background: linear-gradient(145deg, #eeeeee, deepskyblue, gold);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.custome-gradient {
+  background: linear-gradient(145deg, red, deeppink, blue);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 60px;
+  text-align: center;
+  font-family: "Akaya Kanadaka", system-ui;
+}
+/*============== Custome font family for all main heading ==============*/
+.font-family {
+  font-family: "Akaya Kanadaka", system-ui;
+}
+/*============== Custome font family for all h1 of product page ==============*/
+.fs-h1 {
+  font-family: "Lexend Deca", sans-serif;
+  font-size: 33px;
+}
+/*============== Create custome CSS for quantity value ==============*/
+.qty-wh {
+  width: 70px;
+  height: 40px;
+  border: none;
+  border-radius: 4px;
+  font-size: 30px;
+}
+/*============== shoes3.html hero image width & height ==============*/
+.img-hero {
+  max-width: 100%;
+  height: auto;
+  margin-right: 40px;
+}
+/*============== Shoes4.html page hero image width & height ==============*/
+.shoes4-hero {
+  width: 800px;
+  height: auto;
+}
+/*============== Shoes9.html page hero image width & height ==============*/
+.shoes9-hero {
+  width: min(90%, 900px);
+  height: auto;
+}
+
+/*============== Scroller button  ==============*/
+.scroll-btn {
+  position: fixed;
+  bottom: 20px;
+  right: 15px;
+  color: deeppink;
+  z-index: 1000;
+  display: none;
+  cursor: pointer;
+}
+/*============== shoes4.html page back to home btn styling ==============*/
+.backHome-btn {
+  position: relative;
+  top: 45px;
+  left: 40px;
+}
+/*============== Short list option in cart page. ==============*/
+.wh-300 {
+  width: 200px;
+  height: 40px;
+  font-size: 1.2rem;
+}
+/* ============Media for mobile============= */
+
+@media (max-width: 768px) {
+  /*============== Hero section  ==============*/
+  .hero-100vh {
+    height: auto;
+  }
+  /*============== shoes4.html page back to home btn styling ==============*/
+  .backHome-btn {
+    position: relative;
+    top: 15px;
+    left: 10px;
+  }
+  /*============== offcanvasScrolling section  ==============*/
+  #offcanvasScrolling {
+    width: 100%;
+  }
+  /*============== Short list option in cart page. ==============*/
+  .wh-300 {
+    width: 120px;
+    height: 40px;
+    font-size: 1rem;
+  }
+
+  /*============== shoesImg products section  ==============*/
+  .shoesImg {
+    width: 100%;
+    height: 200px;
+    object-fit: contain;
+  }
+
+  /*============== Trading products section  ==============*/
+  .trd-img-wh {
+    width: 350px;
+    height: auto;
+  }
+
+  /*============== Login Message modal  ==============*/
+  #messageModal {
+    width: 350px;
+    height: 150px;
+    position: absolute;
+    top: 2%;
+    left: 3%;
+  }
+  #messageModal i {
+    font-size: 50px;
+    color: green;
+  }
+
+  /*============== Sign up message modal ==============*/
+  #signupMsgModal {
+    width: 350px;
+    height: 150px;
+    position: absolute;
+    top: 2%;
+    left: 3%;
+  }
+  #signupMsgModal i {
+    font-size: 50px;
+    color: green;
+  }
+  #signupMsgModal p {
+    font-size: 20px;
+  }
+
+  /*============== Signup Message Modal on index.html ==============*/
+  #MainsignupMsgModal {
+    width: 350px;
+    height: 150px;
+    position: absolute;
+    top: 2%;
+    left: 3%;
+  }
+
+  #MainsignupMsgModal i {
+    font-size: 50px;
+    color: green;
+  }
+  #MainsignupMsgModal p {
+    font-size: 20px;
+  }
+  /*============== Login  Message Modal on index.html ==============*/
+  #MainmessageModal {
+    width: 350px;
+    height: 150px;
+    position: absolute;
+    top: 2%;
+    left: 3%;
+  }
+
+  #MainmessageModal i {
+    font-size: 50px;
+    color: green;
+  }
+  #MainmessageModal p {
+    font-size: 20px;
+  }
+  /* ===========Contact Us Message modal ==============*/
+  #contactusMsgModal {
+    position: fixed;
+    top: 3%;
+    left: 3%;
+  }
+  #contactusMsgModal i {
+    font-size: 50px;
+    color: green;
+  }
+
+  /*============== Add to cart Msg ==============*/
+  #AddToCartMsgModal {
+    position: fixed;
+    top: 3%;
+    left: 3%;
+    padding: 14%;
+  }
+  #AddToCartMsgModal i {
+    font-size: 50px;
+    color: green;
+    padding-top: 20px;
+  }
+  /*============== Buy form message styling ==============*/
+  .buyform {
+    width: 100%;
+    position: fixed;
+    top: 10px;
+    left: 0;
+    z-index: 99;
+  }
+  #BuyMsgModal {
+    position: fixed;
+    top: 3%;
+    left: 3%;
+    padding: 14%;
+  }
+  #BuyMsgModal i {
+    font-size: 50px;
+    color: green;
+    padding-top: 20px;
+  }
+  /* ============= =============== */
+  .shadow-mob {
+    box-shadow: 0 0 3px 3px black;
+    border-radius: 0 0 10px 10px;
+  }
+  .custome-gradient {
+    background: linear-gradient(145deg, red, deeppink, blue);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 42px;
+    font-family: "Akaya Kanadaka", system-ui;
+  }
+  /*============== shoes3.html hero image width & height ==============*/
+  .img-hero {
+    max-width: 100%;
+    height: auto;
+    margin-right: 0px;
+  }
+  /*============== Shoes4.html page hero image width & height  ==============*/
+  .shoes4-hero {
+    width: 100%;
+    height: auto;
+  }
+  /*============== Custome font family for all h1 of product page  ==============*/
+  .fs-h1 {
+    font-family: "Lexend Deca", sans-serif;
+    font-size: 30px;
+  }
+  /*============== shoes4.html page back to home btn styling  ==============*/
+  .backHome-bt {
+    position: relative;
+    top: 0px;
+    left: 10px;
+    z-index: 1000;
+  }
+  /*============== Footer newsletter ==============*/
+  .footer-news {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+  }
+  .footer-ib {
+    width: 100%;
+    height: 40px;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 992px) {
+  .hero-100vh {
+    height: auto;
+  }
+  /*============== offcanvasScrolling section  ==============*/
+  #offcanvasScrolling {
+    width: 60%;
+  }
+  /*============== Trading products section  ==============*/
+  .trd-img-wh {
+    width: 350px;
+    height: auto;
+  }
+
+  /*============== Login Message modal  ==============*/
+  #messageModal {
+    width: 400px;
+    height: 200px;
+    position: absolute;
+    top: 2%;
+    left: 30%;
+  }
+
+  /*============== Sign up message modal ==============*/
+  #signupMsgModal {
+    width: 400px;
+    height: 200px;
+    position: absolute;
+    top: 2%;
+    left: 30%;
+  }
+
+  /*============== Signup Message Modal on index.html ==============*/
+  #MainsignupMsgModal {
+    width: 400px;
+    height: 200px;
+    position: absolute;
+    top: 2%;
+    left: 30%;
+  }
+
+  /*============== Login  Message Modal on index.html ==============*/
+  #MainmessageModal {
+    width: 400px;
+    height: 200px;
+    position: absolute;
+    top: 2%;
+    left: 30%;
+  }
+
+  /* ===========Contact Us Message modal ==============*/
+  #contactusMsgModal {
+    position: fixed;
+    top: 3%;
+    left: 30%;
+  }
+
+  /*============== Add to cart Msg ==============*/
+  #AddToCartMsgModal {
+    width: 500px;
+    height: 150px;
+    position: fixed;
+    top: 3%;
+    left: 20%;
+    padding: 14%;
+  }
+
+  /*============== Buy form message styling ==============*/
+  .buyform {
+    width: 60%;
+    position: fixed;
+    top: 10px;
+    left: 20%;
+    z-index: 99;
+  }
+  #BuyMsgModal {
+    width: 500px;
+    height: 150px;
+    position: fixed;
+    top: 3%;
+    left: 20%;
+    padding: 14%;
+  }
+  #BuyMsgModal i {
+    font-size: 50px;
+    color: green;
+    padding-top: 20px;
+  }
+
+  /*============== Product collection images width and height ==============*/
+  .img-wh {
+    width: 100%;
+    height: 170px;
+    object-fit: contain;
+  }
+  /*============== Last two cart image ==============*/
+  .imgh-200 {
+    height: 220px;
+    width: 100%;
+    object-fit: contain;
+  }
+}

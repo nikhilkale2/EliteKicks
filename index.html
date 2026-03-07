@@ -1,0 +1,1026 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="shortcut icon" href="Website Logo.svg" type="image/x-icon" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Akaya+Kanadaka&family=Cookie&family=Engagement&family=Gabarito:wght@400..900&family=Hurricane&family=Italianno&family=Leckerli+One&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Pacifico&family=Pinyon+Script&family=Playball&family=Praise&family=Winky+Rough:ital,wght@0,300..900;1,300..900&display=swap"
+      rel="stylesheet"
+    />
+    <title>PAIROX</title>
+  </head>
+
+  <body>
+    <!--============ Lgin Form Modal ============ -->
+    <div class="modal fade text-dark z-n1" id="MainloginformModal">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Login Form</h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body p-4">
+            <form action="" class="bannerForm" id="MainUserLoginForm">
+              <h5 class="text-center fs-4">SIGN IN</h5>
+              <p class="text-center banner-para">
+                Enter your Username and password
+              </p>
+              <div class="input-group mb-3">
+                <span class="input-group-text" id="basic-addon1"
+                  ><i class="fa-regular fa-circle-user"></i
+                ></span>
+                <input
+                  type="email"
+                  class="form-control"
+                  placeholder="Username"
+                  aria-label="Username"
+                  aria-describedby="basic-addon1"
+                  required
+                  id="UserName"
+                />
+              </div>
+              <div class="input-group mb-3">
+                <span class="input-group-text" id="basic-addon1"
+                  ><i class="fa-solid fa-lock"></i
+                ></span>
+                <input
+                  type="password"
+                  class="form-control"
+                  placeholder="password"
+                  aria-label="password"
+                  aria-describedby="basic-addon1"
+                  required
+                  id="Password"
+                />
+              </div>
+              <p class="text-center fs-lg-5">
+                Create new account for registration
+              </p>
+
+              <div class="d-flex justify-content-center gap-4">
+                <a href="#" id="LoginFormBtn">
+                  <button class="btn-primary px-lg-5 px-4 loginbtn">
+                    Login
+                  </button>
+                </a>
+                <a
+                  href="#"
+                  data-bs-dismiss="modal"
+                  data-bs-toggle="modal"
+                  data-bs-target="#MainsignupformModal"
+                >
+                  <button class="px-lg-5 px-4 signupbtn" id="SignUp">
+                    Sign up
+                  </button>
+                </a>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--============  Login form Message modal ============ -->
+    <div id="MainmessageModal" class="d-none">
+      <p><i class="fa-solid fa-circle-check"></i></p>
+      <p class="fs-4">Login successful ✅</p>
+    </div>
+
+    <!--============  Sign up form Modal ============ -->
+    <div class="modal fade text-dark" id="MainsignupformModal">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Sign Up Form</h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body p-lg-4 p-2">
+            <h5 class="text-center">SIGN UP</h5>
+            <p class="text-center banner-para">
+              Create new accounts for registration
+            </p>
+            <form class="row g-3" id="MainsignupForm">
+              <div class="col-md-6 col-6">
+                <label for="FirstName" class="form-label">First Name</label>
+                <input
+                  type="FirstName"
+                  class="form-control"
+                  id="inputFirstName4"
+                  required
+                />
+              </div>
+              <div class="col-md-6 col-6">
+                <label for="LastName" class="form-label">Last Name</label>
+                <input
+                  type="password"
+                  class="form-control"
+                  id="inputLastName4"
+                  required
+                />
+              </div>
+              <div class="col-md-6 col-6">
+                <label for="inputEmail4" class="form-label">Email</label>
+                <input
+                  type="email"
+                  class="form-control"
+                  id="inputEmail4"
+                  required
+                />
+              </div>
+              <div class="col-md-6 col-6">
+                <label for="inputPassword4" class="form-label">Password</label>
+                <input
+                  type="password"
+                  class="form-control"
+                  id="inputPassword4"
+                  required
+                />
+              </div>
+
+              <div class="col-md-4">
+                <label for="inputCity" class="form-label">City</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="inputCity"
+                  required
+                />
+              </div>
+              <div class="col-md-4 col-6">
+                <label for="inputState" class="form-label">State</label>
+                <select id="inputState" class="form-select" required>
+                  <option value="" selected>Choose...</option>
+                  <option>Andhra Pradesh</option>
+                  <option>Arunachal Pradesh</option>
+                  <option>Assam</option>
+                  <option>Bihar</option>
+                  <option>Chhattisgarh</option>
+                  <option>Goa</option>
+                  <option>Gujarat</option>
+                  <option>Haryana</option>
+                  <option>Himachal Pradesh</option>
+                  <option>Jharkhand</option>
+                  <option>Karnataka</option>
+                  <option>Kerala</option>
+                  <option>Madhya Pradesh</option>
+                  <option>Maharashtra</option>
+                  <option>Manipur</option>
+                  <option>Meghalaya</option>
+                  <option>Mizoram</option>
+                  <option>Nagaland</option>
+                  <option>Odisha</option>
+                  <option>Punjab</option>
+                  <option>Rajasthan</option>
+                  <option>Sikkim</option>
+                  <option>Tamil Nadu</option>
+                  <option>Telangana</option>
+                  <option>Tripura</option>
+                  <option>Uttar Pradesh</option>
+                  <option>Uttarakhand</option>
+                  <option>West Bengal</option>
+                </select>
+              </div>
+              <div class="col-md-4 col-6">
+                <label for="inputState" class="form-label">Gender</label>
+                <select id="inputGender" class="form-select" required>
+                  <option value="" selected>Please Select</option>
+                  <option>Male</option>
+                  <option>Female</option>
+                </select>
+              </div>
+              <div class="col-12">
+                <div class="form-check">
+                  <input
+                    class="form-check-input"
+                    type="checkbox"
+                    id="gridCheck"
+                    required
+                  />
+                  <label class="form-check-label" for="gridCheck">
+                    Check me out
+                  </label>
+                </div>
+              </div>
+              <div
+                class="col-12 d-flex justify-content-center align-items-center"
+              >
+                <button type="submit" class="loginbtn btn-primary">
+                  Sign in
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--============  sign up message modal ============-->
+    <div class="d-none" id="MainsignupMsgModal">
+      <p><i class="fa-solid fa-circle-check"></i></p>
+      <p class="">Account is created successfully ✅</p>
+    </div>
+
+    <!-- ========== Buy Now Form Modal ========== -->
+    <div class="p-lg-5 p-3 buyform d-none" id="BuyformModal">
+      <h3 class="text-center">CHECKOUT</h3>
+      <form action="" class="row g-lg-2 g-1" id="BuyproductsForm">
+        <div class="d-flex flex-column gap-1 col-md-12 col-6">
+          <label for="inputName">Full Name</label>
+          <input
+            type="text"
+            placeholder="Alex zander"
+            id="inputFirstName"
+            class="form-control"
+            required
+          />
+        </div>
+
+        <div class="d-flex flex-column gap-1 col-md-6 col-6">
+          <label for="inputEmail">Email:</label>
+          <input
+            type="email"
+            placeholder="alexzander@gmail.com"
+            id="inputEmail"
+            class="form-control"
+            required
+          />
+        </div>
+
+        <div class="d-flex flex-column gap-1 col-md-6 col-12">
+          <label for="inputNumber">Mobile:</label>
+          <input
+            type="number"
+            placeholder="+91 93432 33232"
+            id="inputNumber"
+            class="form-control"
+            required
+          />
+        </div>
+
+        <div class="d-flex flex-column gap-1 col-md-12 col-12">
+          <label for="inputAddress">Address:</label>
+          <input
+            type="text"
+            placeholder="Address"
+            id="inputAddress"
+            class="form-control"
+            required
+          />
+        </div>
+
+        <div class="d-flex flex-column gap-1 col-md-4 col-12">
+          <label for="inputCity">City:</label>
+          <input
+            type="text"
+            placeholder="City"
+            id="inputCity"
+            class="form-control"
+            required
+          />
+        </div>
+
+        <div class="d-flex flex-column gap-1 col-md-4 col-6">
+          <label for="inputState">State:</label>
+          <input
+            type="text"
+            placeholder="State"
+            id="inputState"
+            class="form-control"
+            required
+          />
+        </div>
+
+        <div class="d-flex flex-column gap-1 col-md-4 col-6">
+          <label for="inputZip">Zip:</label>
+          <input
+            type="text"
+            placeholder="Zip code"
+            id="inputZip"
+            class="form-control"
+            required
+          />
+        </div>
+
+        <div class="col-md-6 col-6">
+          <button class="btn btn-primary px-5 mt-3" id="BuyFormBtn">
+            Submit
+          </button>
+        </div>
+        <div class="col-md-6 col-6">
+          <button class="btn btn-secondary px-5 mt-3" id="closeBuyform">
+            Close
+          </button>
+        </div>
+      </form>
+    </div>
+
+    <!-- ========== Buy Now Msg Modal ========== -->
+    <div class="d-none" id="BuyMsgModal">
+      <i class="fa-solid fa-circle-check"></i>
+      <p class="fs-6" id="AddCartMsg">
+        Your order has been placed successfully.
+      </p>
+    </div>
+
+    <!-- ==========Off Canvas products section========== -->
+    <div
+      class="offcanvas offcanvas-start"
+      data-bs-scroll="true"
+      data-bs-backdrop="false"
+      id="offcanvasScrolling"
+      aria-labelledby="offcanvasScrollingLabel"
+    >
+      <div class="offcanvas-header">
+        <h5
+          class="offcanvas-title font-family fs-2"
+          id="offcanvasScrollingLabel"
+        >
+          Buy Now Products👟
+        </h5>
+        <button
+          type="button"
+          class="btn-close text-reset"
+          data-bs-dismiss="offcanvas"
+          aria-label="Close"
+        ></button>
+      </div>
+
+      <div class="offcanvas-body">
+        <div
+          class="col-12 col-md-12 border-top border-bottom border-dark d-flex justify-content-between align-items-center"
+        >
+          <h3 class="text-center">
+            <span class="custome-gradient">👉 Orders</span>
+            <span class="fs-1">👟</span>
+          </h3>
+        </div>
+        <div class="ProductCardBody" id="ProductCardBody"></div>
+      </div>
+    </div>
+
+    <!-- ========== Header Section ========== -->
+
+    <header>
+      <div class="container-fluid p-0">
+        <div class="container">
+          <div
+            class="row align-items-center shadow-mob shadow-lap mt-lg-3 bg-white"
+          >
+            <div class="col-6 p-2">
+              <a href="index.html">
+                <img src="Website Logo.svg" alt="" />
+              </a>
+            </div>
+            <div class="col-6 text-end p-2 d-lg-none">
+              <i class="fa-solid fa-bars fs-2 text-dark" id="NavMenu"></i>
+            </div>
+            <div
+              class="col-12 col-lg-6 d-flex flex-column gap-2 py-3 px-4 d-none d-lg-flex justify-content-lg-center align-items-lg-center flex-lg-row gap-lg-1"
+              id="NavLink"
+            >
+              <a
+                href="#"
+                data-target="Home"
+                class="NavLinks text-decoration-none nav-link fs-5"
+                >Home</a
+              >
+              <a
+                href="#"
+                data-target="About"
+                class="NavLinks text-decoration-none nav-link fs-5"
+                >About</a
+              >
+              <a
+                href="#"
+                data-target="Shop"
+                class="NavLinks text-decoration-none nav-link fs-5"
+                >Shop</a
+              >
+              <a
+                href="#"
+                data-target="Contact"
+                class="NavLinks text-decoration-none nav-link fs-5"
+                >Contact</a
+              >
+              <div class="">
+                <i
+                  class="fa-regular fa-circle-user fs-3 ms-1 text-dark"
+                  data-bs-toggle="modal"
+                  data-bs-target="#MainloginformModal"
+                ></i>
+                <i
+                  class="fa-solid fa-toggle-off fs-3 ms-3 text-dark"
+                  id="ThemeBtn"
+                ></i>
+                <a
+                  href="#"
+                  data-bs-toggle="offcanvas"
+                  data-bs-target="#offcanvasScrolling"
+                  aria-controls="offcanvasScrolling"
+                  ><i class="fa-solid fa-bag-shopping fs-3 ms-3 text-dark"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!--============  Hero section ============-->
+
+    <section>
+      <div class="hero-100vh container-fluid mt-lg-5 px-lg-5 py-lg-5">
+        <div
+          class="row mt-3 d-lg-flex justify-content-lg-center align-items-lg-center"
+        >
+          <div class="col-12 col-lg-6 mt-3" id="Hero-info">
+            <h1 class="custome-gradient">
+              Walk with style, <span class="">step with confidence</span>
+            </h1>
+            <p class="fs-5 text-center">
+              Discover the perfect blend at style, comfort and quality. Our
+              exclusive collection of shoes is designed to evalvate your every
+              step.
+            </p>
+            <div
+              class="align-items-center d-flex justify-content-center gap-1 gap-lg-3"
+            >
+              <a href="#" data-target="Shop" class="NavLinks">
+                <button
+                  class="py-3 px-5 border-0 rounded-pill bg-warning text-white"
+                  data-bs-toggle="tooltip"
+                  data-bs-placement="top"
+                  title="Shop Now"
+                >
+                  Shop Now
+                </button>
+              </a>
+              <a href="#" data-target="Contact" class="NavLinks">
+                <button
+                  class="py-3 px-5 border-1 rounded-pill bg-white"
+                  data-bs-toggle="tooltip"
+                  data-bs-placement="top"
+                  title="Contact Us"
+                >
+                  Contact Us
+                </button>
+              </a>
+            </div>
+          </div>
+          <div class="col-12 col-lg-6 mt-4" id="Hero-img">
+            <img src="images/1_Hero_Image.png" alt="" class="img-fluid" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--============  About section start ============-->
+
+    <section id="About">
+      <div class="container-fluid">
+        <div class="container">
+          <h1 class="text-center fs-1 mb-lg-5 mb-4 mt-5 font-family">
+            ABOUT US
+          </h1>
+          <div class="row align-items-center">
+            <div class="col-lg-6 col-12" id="about-box">
+              <h1 class="custome-gradient">Step Into Quality</h1>
+              <p class="lh-base fs-5">
+                We believe shoes are more than just footwear — they are part of
+                your everyday journey. Our goal is to create shoes that balance
+                comfort, style, and durability, made for real life and real
+                movement. Every design is carefully crafted using quality
+                materials, modern techniques, and a deep understanding of how
+                people move
+              </p>
+              <a href="#" data-target="Shop" class="NavLinks">
+                <button
+                  class="px-lg-5 border-0 rounded fs-5 bg-warning px-4 py-2"
+                  data-bs-toggle="tooltip"
+                  data-bs-placement="top"
+                  title="Explore more"
+                >
+                  Explore more <i class="fa-solid fa-arrow-right"></i>
+                </button>
+              </a>
+            </div>
+            <div class="col-lg-6 col-12 mt-5">
+              <img
+                src="images/about-img.jpg"
+                alt=""
+                class="img-fluid"
+                id="about-img"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--============  Trading product section ============-->
+
+    <section id="popular">
+      <div class="container-fluid mt-lg-5 mt-5">
+        <h1 class="custome-gradient mb-lg-5">Our Popular Picks</h1>
+        <div
+          class="row d-lg-flex justify-content-lg-center gap-3 align-items-lg-center"
+        >
+          <!-- First item -->
+          <div
+            class="col-lg-3 col-12 p-3 border border-primary shadow-lg p-lg-3 height-320 rounded rounded-5 Popular-item d-flex justify-content-between align-items-center flex-column"
+          >
+            <h1 class="fs-5">Nike Air Force 1 '07 LV8 Men's</h1>
+            <img src="images/2_Image.png" alt="Nike 1" class="trd-img-wh" />
+            <div class="d-flex gap-4 mt-3">
+              <p class="fs-4 fw-bold">₹10,257</p>
+              <p class="fs-5">4.5⭐ (154)</p>
+              <a href="shoes1.html">
+                <button
+                  type="button"
+                  class="btn btn-danger"
+                  data-bs-toggle="tooltip"
+                  data-bs-placement="top"
+                  title="Shop Now"
+                >
+                  Shop <i class="fa-solid fa-cart-shopping"></i>
+                </button>
+              </a>
+            </div>
+          </div>
+
+          <!-- second item -->
+          <div
+            class="col-lg-3 col-12 p-3 border border-primary shadow-lg p-lg-3 height-320 rounded rounded-5 Popular-item d-flex justify-content-between align-items-center flex-column"
+          >
+            <h1 class="fs-5">Nike Men's Uplift SC Shoes</h1>
+            <img src="images/3_Image.png" alt="Nike 1" class="trd-img-wh" />
+            <div class="d-flex gap-4 mt-4">
+              <p class="fs-4 fw-bold">₹4,495</p>
+              <p class="fs-5">4.5⭐ (140)</p>
+              <a href="shoes2.html">
+                <button
+                  type="button"
+                  class="btn btn-danger"
+                  data-bs-toggle="tooltip"
+                  data-bs-placement="top"
+                  title="Shop Now"
+                >
+                  Shop <i class="fa-solid fa-cart-shopping"></i>
+                </button>
+              </a>
+            </div>
+          </div>
+          <!-- Third item -->
+          <div
+            class="col-lg-3 col-12 p-3 border border-primary shadow-lg p-lg-3 height-320 rounded rounded-5 Popular-item d-flex justify-content-between align-items-center flex-column"
+          >
+            <h1 class="fs-5">Nike Quest 5 Running Shoes</h1>
+            <img src="images/4_Image.png" alt="Nike 1" class="trd-img-wh" />
+            <div class="d-flex gap-4 mt-5">
+              <p class="fs-4 fw-bold">₹5,295</p>
+              <p class="fs-5">4.5⭐ (144)</p>
+              <a href="shoes3.html">
+                <button
+                  type="button"
+                  class="btn btn-danger"
+                  data-bs-toggle="tooltip"
+                  data-bs-placement="top"
+                  title="Shop Now"
+                >
+                  Shop <i class="fa-solid fa-cart-shopping"></i>
+                </button>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--============ Advertisement section ============ -->
+    <section id="ADS">
+      <div class="container-fluid mt-5">
+        <div class="container">
+          <div class="row align-items-center mt-lg-5 bg-warning py-4">
+            <div class="col-lg-6 col-12" id="Ads-img">
+              <img
+                src="images/Image_21.png"
+                alt="Advertisement Nike"
+                class="img-fluid"
+              />
+            </div>
+            <div class="col-lg-6 col-12" id="Ads-info">
+              <h1 class="custome-gradient">Elegance Craft Accent Shoes</h1>
+              <p class="fs-5">
+                Experience comfort and style in every step. Premium shoes
+                designed for everyday wear and long-lasting performance.
+              </p>
+              <button
+                type="button"
+                class="py-2 px-5 fs-5 rounded rounded-5 btn-primary"
+                data-bs-toggle="tooltip"
+                data-bs-placement="top"
+                title="Explore more"
+              >
+                Explore more <i class="fa-solid fa-arrow-right-long"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--============ Latest product section ============ -->
+    <section id="Shop">
+      <div class="container-fluid mt-5">
+        <h1 class="text-center custome-gradient mb-4">Our Collection</h1>
+        <!-- First row -->
+        <div class="row align-items-center justify-content-center gap-3">
+          <!-- First product -->
+          <div
+            class="col-lg-3 col-12 border border-primary p-3 height-320 d-flex justify-content-between align-items-center flex-column coll-items"
+          >
+            <h1 class="fs-5">Nike Jordan Stay Loyal 3 Sneakers</h1>
+            <img src="images/9 Image.png" alt="product-1" class="img-wh" />
+            <div class="d-flex gap-5">
+              <p class="fs-5 fw-bold">₹8,993</p>
+              <p class="">4.5⭐(123)</p>
+              <a href="shoes4.html">
+                <button
+                  type="button"
+                  class="btn btn-danger"
+                  data-bs-toggle="tooltip"
+                  data-bs-placement="top"
+                  title="Shop Now"
+                >
+                  Shop <i class="fa-solid fa-cart-shopping"></i>
+                </button>
+              </a>
+            </div>
+          </div>
+          <!-- Second product -->
+          <div
+            class="col-lg-3 col-12 border border-primary p-3 height-320 d-flex justify-content-between align-items-center flex-column coll-items"
+          >
+            <h1 class="fs-5">Nike Air Vapormax 2023 FK Sneakers</h1>
+            <img src="images/13_Image.png" alt="product-1" class="img-wh" />
+            <div class="d-flex gap-5">
+              <p class="fs-5 fw-bold">₹15,426</p>
+              <p class="">4.5⭐(123)</p>
+              <a href="shoes5.html">
+                <button
+                  type="button"
+                  class="btn btn-danger"
+                  data-bs-toggle="tooltip"
+                  data-bs-placement="top"
+                  title="Shop Now"
+                >
+                  Shop <i class="fa-solid fa-cart-shopping"></i>
+                </button>
+              </a>
+            </div>
+          </div>
+          <!-- Third product -->
+          <div
+            class="col-lg-3 col-12 border border-primary p-3 height-320 d-flex justify-content-between align-items-center flex-column coll-items"
+          >
+            <h1 class="fs-5">Nike Air Max Nuaxis Running Shoes</h1>
+            <img src="images/12_Image.png" alt="product-1" class="img-wh" />
+            <div class="d-flex gap-5">
+              <p class="fs-5 fw-bold">₹6,796</p>
+              <p class="">4.5⭐(123)</p>
+              <a href="shoes6.html">
+                <button
+                  type="button"
+                  class="btn btn-danger"
+                  data-bs-toggle="tooltip"
+                  data-bs-placement="top"
+                  title="Shop Now"
+                >
+                  Shop <i class="fa-solid fa-cart-shopping"></i>
+                </button>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Second row -->
+        <div class="row align-items-center justify-content-center gap-3 mt-4">
+          <!-- First product -->
+          <div
+            class="col-lg-3 col-12 border border-primary p-3 height-320 d-flex justify-content-between align-items-center flex-column coll-item2"
+          >
+            <h1 class="fs-5">Nike Men's Promina Walking Shoes</h1>
+            <img src="images/Image_17.png" alt="product-1" class="img-wh" />
+            <div class="d-flex gap-5">
+              <p class="fs-5 fw-bold">₹4,993</p>
+              <p class="">4.5⭐(123)</p>
+              <a href="shoes7.html">
+                <button
+                  type="button"
+                  class="btn btn-danger"
+                  data-bs-toggle="tooltip"
+                  data-bs-placement="top"
+                  title="Shop Now"
+                >
+                  Shop <i class="fa-solid fa-cart-shopping"></i>
+                </button>
+              </a>
+            </div>
+          </div>
+          <!-- Second product -->
+          <div
+            class="col-lg-3 col-12 border border-primary p-3 height-320 d-flex justify-content-between align-items-center flex-column coll-item2"
+          >
+            <h1 class="fs-5">Nike Zoom Court Pro HC Shoes</h1>
+            <img src="images/Image_14.png" alt="product-1" class="img-wh" />
+            <div class="d-flex gap-5">
+              <p class="fs-5 fw-bold">₹6,999</p>
+              <p class="">4.5⭐(123)</p>
+              <a href="shoes8.html">
+                <button
+                  type="button"
+                  class="btn btn-danger"
+                  data-bs-toggle="tooltip"
+                  data-bs-placement="top"
+                  title="Shop Now"
+                >
+                  Shop <i class="fa-solid fa-cart-shopping"></i>
+                </button>
+              </a>
+            </div>
+          </div>
+          <!-- Third product -->
+          <div
+            class="col-lg-3 col-12 border border-primary p-3 height-320 d-flex justify-content-between align-items-center flex-column coll-item2"
+          >
+            <h1 class="fs-5">Nike Air Zoom Bella 7 Running Shoes</h1>
+            <img
+              src="images/Image_20.png"
+              alt="product-1"
+              class="imgh-200 flex-lg-grow-1"
+            />
+            <div class="d-flex gap-5">
+              <p class="fs-5 fw-bold">₹6,896</p>
+              <p class="">4.5⭐(123)</p>
+              <a href="shoes9.html">
+                <button
+                  type="button"
+                  class="btn btn-danger"
+                  data-bs-toggle="tooltip"
+                  data-bs-placement="top"
+                  title="Shop Now"
+                >
+                  Shop <i class="fa-solid fa-cart-shopping"></i>
+                </button>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--============ Contact form ============ -->
+    <section id="Contact">
+      <div class="container-fluid mt-5 py-5">
+        <h1 class="custome-gradient">Connect with us</h1>
+        <p class="text-center fs-4">If you need any help, please contact us.</p>
+        <div
+          class="container d-lg-flex justify-content-lg-center align-items-lg-center"
+        >
+          <form class="" id="ContactQueryForm">
+            <div class="row p-lg-5">
+              <!-- First input -->
+              <div class="col-lg-6 col-12">
+                <label for="inputName" class="form-label">Fullname</label>
+                <input
+                  type="text"
+                  placeholder="Enter your name"
+                  id="inputName"
+                  class="form-control"
+                  required
+                />
+              </div>
+              <!-- Second input -->
+              <div class="col-lg-6 col-12">
+                <label for="inputEmail4" class="form-label">Email</label>
+                <input
+                  type="email"
+                  placeholder="Enter your email"
+                  id="inputEmailc"
+                  class="form-control"
+                  required
+                />
+              </div>
+              <!-- Address 1 input -->
+              <div class="col-12">
+                <label for="inputAddress" class="form-label">Address 1</label>
+                <input
+                  type="text"
+                  placeholder="Enter your Address"
+                  id="inputAddress"
+                  class="form-control"
+                  required
+                />
+              </div>
+              <!-- Address 2 input -->
+              <div class="col-12">
+                <label for="inputAddress2" class="form-label">Address 2</label>
+                <input
+                  type="text"
+                  placeholder="Enter your Address 2"
+                  id="inputAddress2"
+                  class="form-control"
+                  required
+                />
+              </div>
+              <!-- general details  -->
+              <div class="col-lg-6 col-6">
+                <label for="inputCity" class="form-label">City</label>
+                <input
+                  type="text"
+                  placeholder="City"
+                  id="inputCity8"
+                  class="form-control"
+                  required
+                />
+              </div>
+              <div class="col-lg-4 col-6">
+                <label for="inputState" class="form-label">State</label>
+                <input
+                  type="text"
+                  placeholder="State"
+                  id="inputState8"
+                  class="form-control"
+                  required
+                />
+              </div>
+              <div class="col-lg-2 col-12">
+                <label for="inputZip" class="form-label">Zip </label>
+                <input
+                  type="number"
+                  placeholder="Enter your Zip"
+                  id="inputZip"
+                  class="form-control"
+                  required
+                />
+              </div>
+              <div class="col-lg-12 col-12 mt-3">
+                <button
+                  class="btn btn-primary w-25"
+                  data-bs-toggle="tooltip"
+                  data-bs-placement="top"
+                  title="Submit the form"
+                >
+                  Submit
+                </button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!--============ Contact us message Modal ============ -->
+    <div class="d-none" id="contactusMsgModal">
+      <p><i class="fa-solid fa-circle-check"></i></p>
+      <p class="fs-5 text-center">✅ Thanks, we got your message</p>
+    </div>
+
+    <!--============  Scroller Button ============ -->
+    <div class="">
+      <i
+        class="fa-solid fa-circle-chevron-up fs-1 scroll-btn"
+        id="scrollBtn"
+      ></i>
+    </div>
+
+    <!--============  Footer section ============ -->
+    <section>
+      <div class="container-fluid bg-dark text-white p-lg-5 py-4">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-6 col-12">
+              <h1 class="custome-gradient">Stay Updated, Stay Connected</h1>
+            </div>
+            <div class="col-lg-6 col-12 footer-news">
+              <h5 class="ms-lg-3 text-center">Get Our News And Updates</h5>
+              <input
+                type="text"
+                placeholder="Enter your email"
+                id="inputEmail5"
+                class="py-lg-2 px-3 px-lg-3 rounded-pill border border-white bg-transparent text-white fs-5 footer-ib"
+              />
+              <button
+                class="py-lg-2 fs-5 px-lg-5 ms-lg-2 rounded-pill border-0 bg-warning footer-ib"
+                data-bs-toggle="tooltip"
+                data-bs-placement="top"
+                title="Subscribe Now"
+              >
+                Subscribe
+              </button>
+              <p class="ms-lg-3">
+                By subscribing you agree to our
+                <span class="btn-link">privacy policy</span>
+              </p>
+            </div>
+            <hr />
+            <!-- Second part of footer -->
+            <div
+              class="col-lg-12 col-12 d-flex flex-lg-row flex-column justify-content-around align-items-center text-center"
+            >
+              <div class="">
+                <img
+                  src="Website Logo.svg"
+                  alt="website logo"
+                  class="img-fluid bg-white"
+                />
+                <p class="">
+                  Seamless transcitions, personalized insights, <br />and
+                  innovative solutions for a smarter tomorrow.
+                </p>
+              </div>
+              <ul class="list-unstyled lh-lg">
+                <h4 class="">Top Links</h4>
+                <li class="fs-4">
+                  <a href="#" class="text-decoration-none">Home</a>
+                </li>
+                <li class="fs-4">
+                  <a href="#" class="text-decoration-none">About</a>
+                </li>
+                <li class="fs-4">
+                  <a href="#" class="text-decoration-none">Shop</a>
+                </li>
+                <li class="fs-4">
+                  <a href="#" class="text-decoration-none">Contact</a>
+                </li>
+              </ul>
+            </div>
+            <div class="col-lg-12 col-12">
+              <p class="text-center fs-2 footer-p">
+                ©2026 EliteKicks by Kale Nikhil
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--============  GSAP CDN ============ -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/gsap.min.js"
+      integrity="sha512-NcZdtrT77bJr4STcmsGAESr06BYGE8woZdSdEgqnpyqac7sugNO+Tr4bGwGF3MsnEkGKhU2KL2xh6Ec+BqsaHA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <!--============  ScrollTrigger CDN ============ -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/ScrollTrigger.min.js"
+      integrity="sha512-P2IDYZfqSwjcSjX0BKeNhwRUH8zRPGlgcWl5n6gBLzdi4Y5/0O4zaXrtO4K9TZK6Hn1BenYpKowuCavNandERg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <!--============  Lenis CDN ============ -->
+    <script src="https://unpkg.com/lenis@1.3.17/dist/lenis.min.js"></script>
+    <!--============  Bootstrap CDN ============ -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+      integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+      integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+      crossorigin="anonymous"
+    ></script>
+    <!--============  Script.js file CDN ============ -->
+    <script src="script.js"></script>
+    <script src="cart.js"></script>
+    <script src="index.js"></script>
+  </body>
+</html>
