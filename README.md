@@ -1,10 +1,10 @@
-👟**EliteKicks**
+## <img src ="Website Logo.svg" alt="home"/>**EliteKicks**
 
 <p align="center"> Modern shoe shopping website built with Bootstrap, smooth animations, and cart functionality. </p> <p align="center">
 
 </p>
 
-**⭐ Project Preview / Live Demo**
+## **⭐ Project Preview / Live Demo**
 
 You can view the live version of the project here.
 
@@ -12,7 +12,7 @@ You can view the live version of the project here.
 
 **Deployment :**
 
-**🚀 Technologies Used**
+## **🚀 Technologies Used**
 
 HTML
 
@@ -28,7 +28,7 @@ Lenis
 
 LocalStorage
 
-**✨ Features**
+## **✨ Features**
 
 Add to Cart functionality
 
@@ -42,8 +42,9 @@ Cart data saved using LocalStorage
 
 Smooth scrolling animations
 
-**📁 Project Structure**
-EliteKicks/
+##**📁 Project Structure**
+
+```EliteKicks/
 ├── index.html
 ├── shoes1.html
 ├── shoes2.html
@@ -60,8 +61,9 @@ EliteKicks/
 ├── cart.js
 ├── index.js
 ├── images/
+```
 
-📸 Screenshots
+## **📸 Screenshots**
 
 **Home Page**
 
@@ -79,7 +81,7 @@ EliteKicks/
 
 <img src ="Screenshots/addtocart.png" alt="home"/>
 
-**🔮 Future Improvements**
+## **🔮 Future Improvements**
 
 Payment gateway integration
 
@@ -89,6 +91,6 @@ User authentication with database
 
 Product search and filter functionality
 
-**👨‍💻 Author**
+## **👨‍💻 Author**
 
 **Nikhil Sunil Kale**
