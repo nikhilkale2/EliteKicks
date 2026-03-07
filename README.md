@@ -1,17 +1,18 @@
-👟 EliteKicks
+👟**EliteKicks**
 
 <p align="center"> Modern shoe shopping website built with Bootstrap, smooth animations, and cart functionality. </p> <p align="center">
 
 </p>
 
-⭐ Project Preview / Live Demo
+**⭐ Project Preview / Live Demo**
 
 You can view the live version of the project here.
 
-Github : https://github.com/nikhilkale2/EliteKicks
+**Github :** https://github.com/nikhilkale2/EliteKicks
 
-Deployment :
-🚀 Technologies Used
+**Deployment :**
+
+**🚀 Technologies Used**
 
 HTML
 
@@ -27,7 +28,7 @@ Lenis
 
 LocalStorage
 
-✨ Features
+**✨ Features**
 
 Add to Cart functionality
 
@@ -35,15 +36,13 @@ Buy Now option
 
 Remove items from Cart
 
-Login / Signup pages
-
 Theme changer (Dark / Light mode)
 
 Cart data saved using LocalStorage
 
 Smooth scrolling animations
 
-📁 Project Structure
+**📁 Project Structure**
 EliteKicks/
 ├── index.html
 ├── shoes1.html
@@ -64,23 +63,23 @@ EliteKicks/
 
 📸 Screenshots
 
-Home Page
+**Home Page**
 
 <img src ="Screenshots/home.png" alt="home"/>
 <img src ="Screenshots/about.png" alt="about"/>
 <img src ="Screenshots/collection.png" alt="collection"/>
 
-Shoes Product Page
+**Shoes Product Page**
 
 <img src ="Screenshots/product_detail1.png" alt="product_detail1"/>
 <img src ="Screenshots/product_detail2.png" alt="product_detail2"/>
 <img src ="Screenshots/product_detail3.png" alt="product_detail3"/>
 
-Cart Page
+**Cart Page**
 
 <img src ="Screenshots/addtocart.png" alt="home"/>
 
-🔮 Future Improvements
+**🔮 Future Improvements**
 
 Payment gateway integration
 
@@ -90,6 +89,6 @@ User authentication with database
 
 Product search and filter functionality
 
-👨‍💻 Author
+**👨‍💻 Author**
 
-Nikhil Sunil Kale
+**Nikhil Sunil Kale**
