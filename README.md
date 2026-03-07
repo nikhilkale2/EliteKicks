@@ -28,6 +28,8 @@ Lenis
 
 LocalStorage
 
+---
+
 ## **✨ Features**
 
 Add to Cart functionality
@@ -41,6 +43,8 @@ Theme changer (Dark / Light mode)
 Cart data saved using LocalStorage
 
 Smooth scrolling animations
+
+---
 
 ##**📁 Project Structure**
 
@@ -62,6 +66,7 @@ Smooth scrolling animations
 ├── index.js
 ├── images/
 ```
+---
 
 ## **📸 Screenshots**
 
@@ -71,15 +76,21 @@ Smooth scrolling animations
 <img src ="Screenshots/about.png" alt="about"/>
 <img src ="Screenshots/collection.png" alt="collection"/>
 
+---
+
 **Shoes Product Page**
 
 <img src ="Screenshots/product_detail1.png" alt="product_detail1"/>
 <img src ="Screenshots/product_detail2.png" alt="product_detail2"/>
 <img src ="Screenshots/product_detail3.png" alt="product_detail3"/>
 
+---
+
 **Cart Page**
 
 <img src ="Screenshots/addtocart.png" alt="home"/>
+
+---
 
 ## **🔮 Future Improvements**
 
@@ -91,6 +102,12 @@ User authentication with database
 
 Product search and filter functionality
 
+---
+
 ## **👨‍💻 Author**
 
 **Nikhil Sunil Kale**
+
+---
+
+Thank you💖
