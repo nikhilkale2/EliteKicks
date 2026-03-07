@@ -1,4 +1,4 @@
-## <img src ="Website Logo.svg" alt="home"/>**EliteKicks**
+## <img src ="Website Logo.svg" alt="home"/>
 
 <p align="center"> Modern shoe shopping website built with Bootstrap, smooth animations, and cart functionality. </p> <p align="center">
 
