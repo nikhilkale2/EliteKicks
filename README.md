@@ -8,13 +8,9 @@
 
 You can view the live version of the project here.
 
-Live Demo
+Github : https://github.com/nikhilkale2/EliteKicks
 
-Add your deployed project link here
-
-Example:
-GitHub Pages / Netlify
-
+Deployment : 
 🚀 Technologies Used
 
 HTML
