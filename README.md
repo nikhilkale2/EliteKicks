@@ -10,7 +10,7 @@ You can view the live version of the project here.
 
 Github : https://github.com/nikhilkale2/EliteKicks
 
-Deployment : 
+Deployment :
 🚀 Technologies Used
 
 HTML
@@ -61,22 +61,24 @@ EliteKicks/
 ├── cart.js
 ├── index.js
 ├── images/
+
 📸 Screenshots
+
 Home Page
 
-(Add screenshot here)
+<img src ="Screenshots/home.png" alt="home"/>
+<img src ="Screenshots/about.png" alt="about"/>
+<img src ="Screenshots/collection.png" alt="collection"/>
 
 Shoes Product Page
 
-(Add screenshot here)
+<img src ="Screenshots/product_detail1.png" alt="product_detail1"/>
+<img src ="Screenshots/product_detail2.png" alt="product_detail2"/>
+<img src ="Screenshots/product_detail3.png" alt="product_detail3"/>
 
 Cart Page
 
-(Add screenshot here)
-
-Login / Signup Page
-
-(Add screenshot here)
+<img src ="Screenshots/addtocart.png" alt="home"/>
 
 🔮 Future Improvements
 
